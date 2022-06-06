@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	//Coundown
 	$('.countdown').downCount({
-        date: '09/25/2020 12:00:00',
+        date: '10/25/2022 12:00:00',
         offset: +10
   });
   // Scroll to ID  
@@ -206,7 +206,7 @@ $(document).ready(function() {
 
             //Ceremony address map
             ceremonyMap = new ymaps.Map('address__map--ceremony', {
-                    center: [40.760873, -73.976398],
+                    center: [26.04595, -80.35371],
                     zoom: 17,
                     controls: []
                 }, {
