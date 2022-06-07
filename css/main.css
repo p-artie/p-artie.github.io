@@ -798,12 +798,12 @@ ul.color_schemes li {
 .couple__image-groom--left::after {
   top: -60px;
   left: 60px;
-  background-image: url("http://placehold.it/352x432"); }
+  background-image: url(/img/test_image.jpg); }
 
 .couple__image-bride--right::after {
   top: -60px;
   right: 60px;
-  background-image: url("http://placehold.it/352x432"); }
+  background-image: url(/img/test_image.jpg); }
 
 /*1.2 END Couple*/
 /*1.2 Couple media*/
