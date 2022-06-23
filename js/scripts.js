@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	//Coundown
 	$('.countdown').downCount({
-        date: '10/25/2022 12:00:00',
+        date: '10/22/2022 14:00:00',
         offset: +10
   });
   // Scroll to ID  
