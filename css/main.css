@@ -1468,10 +1468,10 @@ ul.color_schemes li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: flex-endcenter; }
 
 .rvsp__forrm-wrap {
   margin-right: 15px; }
@@ -1842,7 +1842,7 @@ ul.color_schemes li {
   position: relative; }
 
 .footer__image::after {
-  content: "25 /09 /2020";
+  content: "22 /10 /2022";
   position: absolute;
   bottom: -38px;
   left: 50%;
