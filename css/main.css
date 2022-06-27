@@ -1480,7 +1480,7 @@ ul.color_schemes li {
   font-family: "Marcellus", serif;
   font-size: 56px;
   line-height: 88px;
-  color: #4F3566; }
+  color: #4F3566 !important; }
 
 .rvsp__subtitle {
   font-family: "Playfair Display", serif;
