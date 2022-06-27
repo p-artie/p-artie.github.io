@@ -1240,7 +1240,8 @@ ul.color_schemes li {
   padding-top: 120px;
   padding-bottom: 112px; }
   .venues .s-title {
-    padding-bottom: 48px; }
+    padding-bottom: 48px;
+    padding-top: 120px; }
 
 .venues__card {
   width: 560px;
