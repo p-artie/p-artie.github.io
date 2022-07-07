@@ -126,6 +126,8 @@ $(document).ready(function() {
 	//Story slider
 	$('.story__slider').slick({
 		infinite: true,
+        autoplay: true,
+        speed: 300,
 		prevArrow: '<button type="button" class="slick-prev arrow-left--colored"></button>',
 		nextArrow: '<button type="button" class="slick-next arrow-right--colored"></button>'
 	});
