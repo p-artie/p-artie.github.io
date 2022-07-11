@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/main.css"/>
 
+    <!--Google Maps-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
     <!--<![endif]-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -193,7 +197,7 @@
               </div><a class="venues__card-link" target=”_blank” href="https://www.google.com/maps/place/Gaylord+Palms+Resort+%26+Convention+Center/@28.3431567,-81.5282022,17z/data=!3m1!4b1!4m8!3m7!1s0x88dd7f6608984097:0xc14a199c1b694e2f!5m2!4m1!1i2!8m2!3d28.343152!4d-81.5260135">See on map</a>
             </div>
             <div class="address__map-container--left address__map">
-              <div class="address__map--ceremony map" id="address__map--ceremony"></div>
+              <div class="address__map--ceremony map" id="map"></div>
             </div>
           </div>
         </div>
@@ -236,7 +240,8 @@
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     
     <!-- Yandex map -->
-    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=0a7ad2dd-daec-4dac-84d8-e01e38600600&amp;lang=en"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSJwoTfqoxDK0adSB_Wat5vndk3P3e9a0&callback=initMap"></script>
     <!-- Custom JavaScript -->
     <script src="js/scripts.js"></script>
   </body>

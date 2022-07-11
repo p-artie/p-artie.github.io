@@ -187,86 +187,22 @@ $(document).ready(function() {
 
     $('.swiper-slide-active').siblings('.swiper-slide').css('margin-right', '32px');
 
-  //Init map
-    (function initeMap() {
-
-        let ceremonyMap,
-        receptionMap;
-
-        $('.styleswitch').on('click', function() {
-            $('.map').empty();
-            init();
-        });
-
-        ymaps.ready(init);
-    
-        function init () {
-
-            //Switch map icon
-            let defaultIcon = 'img/map/icon--' + $('head link[id="skins"]').attr('data-color') + '.svg';
-            console.log(defaultIcon);
-
-            //Ceremony address map
-            ceremonyMap = new ymaps.Map('address__map--ceremony', {
-                    center: [26.04595, -80.35371],
-                    zoom: 17,
-                    controls: []
-                }, {
-                    searchControlProvider: 'yandex#search'
-                })
-
-                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-                ),
-                
-                myPlacemark = new ymaps.Placemark(ceremonyMap.getCenter(), {
-                    hintContent: 'Mark',
-                    balloonContent: 'Mark'
-                }, {
-                    iconLayout: 'default#image',
-                    iconImageHref: defaultIcon,
-                    iconImageSize: [63, 83],
-                })
-
-                ceremonyMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
-            
-            ceremonyMap.geoObjects
-                .add(myPlacemark);
-
-            //END ceremony address map
-
-
-            //Reception address map
-            receptionMap = new ymaps.Map('address__map--reception', {
-                    center: [40.760873, -73.976398],
-                    zoom: 17,
-                    controls: []
-                }, {
-                    searchControlProvider: 'yandex#search'
-                });
-
-                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-                ),
-                
-                myPlacemark = new ymaps.Placemark(receptionMap.getCenter(), {
-                    hintContent: 'Mark',
-                    balloonContent: 'Mark'
-                }, {
-                    iconLayout: 'default#image',
-                    iconImageHref: defaultIcon,
-                    iconImageSize: [63, 83],
-                }),
-
-                receptionMap.panes.get('ground').getElement().style.filter = 'grayscale(80%)';
-
-            receptionMap.geoObjects
-                .add(myPlacemark);
-            
-            //END reception address map
-        }
-
-    }());
-
+  // Initialize and add the map
+function initMap() {
+    // The location of Uluru
+    const uluru = { lat: -25.344, lng: 131.031 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+  
+  window.initMap = initMap;
 
 });
