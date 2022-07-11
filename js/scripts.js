@@ -188,21 +188,24 @@ $(document).ready(function() {
     $('.swiper-slide-active').siblings('.swiper-slide').css('margin-right', '32px');
 
   // Initialize and add the map
+  
+
+
+});
+
 function initMap() {
-    // The location of Uluru
-    const uluru = { lat: -25.344, lng: 131.031 };
-    // The map, centered at Uluru
+    // The location of wedding
+    const wedding = { lat: 28.343530, lng: -81.525580 };
+    // The map, centered at wedding
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
-      center: uluru,
+      zoom: 16,
+      center: wedding,
     });
-    // The marker, positioned at Uluru
+    // The marker, positioned at wedding
     const marker = new google.maps.Marker({
-      position: uluru,
+      position: wedding,
       map: map,
     });
   }
   
   window.initMap = initMap;
-
-});
