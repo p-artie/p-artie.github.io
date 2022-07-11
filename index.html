@@ -59,6 +59,7 @@
       <li class="navigation__item mobile-navigation__item"><a class="mobile-navigation__link" href="#photos">Our
           photos</a></li>
       <li class="navigation__item mobile-navigation__item"><a class="mobile-navigation__link" href="#venues">Venue</a>
+      <li class="navigation__item mobile-navigation__item"><a class="mobile-navigation__link" href="#support">Donate</a>
       </li>
     </ul>
   </nav>
@@ -75,6 +76,7 @@
           <li class="header__menu-item"><a class="header__menu-link" href="#story">Love story</a></li>
           <li class="header__menu-item"><a class="header__menu-link" href="#photos">Our photos</a></li>
           <li class="header__menu-item"><a class="header__menu-link" href="#venues">Venue</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#support">Donate</a></li>
         </ul>
         <div class="header__user-actions">
           <div class="user-action user-action--hidden"><a class="mobile-menu-btn" href="#">Menu</a></div>
@@ -255,14 +257,25 @@
   <!-- END Section: Venues -->
 
   <!-- Section: Support -->
-  <section class="support">
+  <section class="support" id="support">
     <div class="container">
       <div class="support__title-wrap">
         <h2 class="support__title">Honeymoon Donation</h2>
       </div>
-      <div class="support__btn-wrap"><span class="support__btn-sescr">Donate towards the couples honeymoon in
+      <div class="support__btn-wrap btn-group-vertical"><span class="support__btn-sescr">Donate towards the couples honeymoon in
           Jamaica</span>
-        <button class="btn support__btn bg--colored" type="button">Donate</button>
+        <button class="btn support__btn bg--colored" 
+          onclick=" window.open('https://www.paypal.me/goodmusicnvibes', '_blank'); return false;" 
+          type="button">PayPal</button>
+        <button class="btn support__btn bg--colored"
+          onclick=" window.open('https://cash.app/$crodgersss', '_blank'); return false;"
+          type="button">Cash App</button>
+        <button class="btn support__btn bg--colored" 
+          onclick=" window.open('https://account.venmo.com/u/Paola-Ramirez-16', '_blank'); return false;"
+          type="button">Venmo</button>
+        <button class="btn support__btn bg--colored"
+          onclick=" window.open('https://docs.google.com/document/d/1cqmtS8Zi0oUPDYOudEKSm3ifPvQx9_Rij-_E3sxe2sA/edit?usp=sharing', '_blank'); return false;"
+          type="button">Zelle</button>
       </div>
     </div>
   </section>
@@ -271,20 +284,14 @@
   <!-- Section: Rvsp -->
   <section class="rvsp" id="rvsp">
     <div class="container">
-      <div class="rvsp__forrm-wrap">
+      <div class="rvsp__forrm-wrap  btn-group-vertical">
         <button class="btn support__btn bg--colored"
           onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSeXZWsVUMVLC6AG1b7y-Zd6JjY5sfDM6rB3kaAY4tWsyLL3Ig/viewform?usp=sf_link', '_blank'); return false;"
           type="button">RSVP</button>
-        </h2><span class="rvsp__subtitle text--colored">Please reserve before October 1st, 2022</span>
-  </section>
-  </div>
-
-  </div>
-  </div>
+      </div>
+    </div>
   </section>
   <!-- END Section: Rvsp -->
-
-
 
   <!-- To top botton -->
   <div class="to-top bg--colored"></div>
