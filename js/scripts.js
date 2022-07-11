@@ -198,8 +198,9 @@ function initMap() {
     const wedding = { lat: 28.343530, lng: -81.525580 };
     // The map, centered at wedding
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 16,
+      zoom: 15,
       center: wedding,
+      mapTypeId: 'hybrid'
     });
     // The marker, positioned at wedding
     const marker = new google.maps.Marker({
