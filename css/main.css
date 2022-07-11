@@ -1592,7 +1592,7 @@ ul.color_schemes li {
 /*1.6 Venues*/
 .venues {
   padding-top: 120px;
-  padding-bottom: 112px;
+  padding-bottom: 10px;
 }
 
 .venues .s-title {
@@ -1909,6 +1909,7 @@ ul.color_schemes li {
   line-height: 24px;
   color: #4F3566;
   margin-bottom: 16px;
+  margin-top: 16px;
   display: block;
 }
 
@@ -2223,8 +2224,8 @@ ul.color_schemes li {
 }
 
 .support {
-  padding-top: 112px;
-  padding-bottom: 185px;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 
 .support .container {
