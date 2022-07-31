@@ -1,10 +1,30 @@
 
 $(document).ready(function() {
-	//Coundown
-	$('.countdown').downCount({
-        date: '10/22/2022 14:00:00',
-        offset: -4
-  });
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 22, 2022 14:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  document.getElementById('days').innerHTML = days;
+  document.getElementById('hours').innerHTML = hours;
+  document.getElementById('minutes').innerHTML = minutes;
+  document.getElementById('seconds').innerHTML = seconds;
+
+}, 1000);
+
   // Scroll to ID  
   function scrollToId(str) {
         $(str + '[href*="#"]').on('click', function(e) {
@@ -126,14 +146,20 @@ $(document).ready(function() {
 	//Story slider
 	$('.story__slider').slick({
 		infinite: true,
-		prevArrow: '<button type="button" class="slick-prev arrow-left--colored"></button>',
-		nextArrow: '<button type="button" class="slick-next arrow-right--colored"></button>'
+    appendArrows: '.arrows_slider',
+  //  arrows: false,
+	prevArrow: '<button type="button" class="slick-prev arrow-left--colored"></button>', 
+  nextArrow: '<button type="button" class="slick-next arrow-right--colored"></button>'
 	});
 
-  //Fancybox
-  // $(".fancy").fancybox({
-  //   'hideOnContentClick': true
-  //   });
+$(function () {
+   $('.story__slider .slick-prev').on('click', function () {
+           $('.story__slider').slick("slickPrev");
+       });
+       $('.story__slider .slick-next').on('click', function () {
+           $('.story__slider').slick("slickNext");
+       });
+ }); 
 
 	//Photo slider
     var swiper = new Swiper('.swiper-container', {

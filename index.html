@@ -92,18 +92,27 @@
       <div class="header__countdown">
         <p class="countdown__title text--colored">Countdown <strong>to</strong> Wedding Ceremony</p>
         <div class="countdown__block countdown">
-          <div class="countdown__element countdown__month border--colored"> <span
-              class="count month text--colored">00</span><span class="label month_ref text--colored">month</span></div>
-          <div class="countdown__element countdown__days border--colored"> <span
-              class="count days text--colored">00</span><span class="label days_ref text--colored">days</span></div>
-          <div class="countdown__element countdown__hours border--colored"> <span
-              class="count hours text--colored">00</span><span class="label hours_ref text--colored">hours</span></div>
-          <div class="countdown__element countdown__minutes border--colored"> <span
-              class="count minutes text--colored">00</span><span class="label minutes_ref text--colored">minutes</span>
+          
+
+          <div class="countdown__element countdown__days border--colored"> 
+            <span id="days" class="count days text--colored">00</span>
+            <span class="label days_ref text--colored">days</span>
           </div>
-          <div class="countdown__element countdown__seconds border--colored"> <span
-              class="count seconds text--colored">00</span><span class="label seconds_ref text--colored">seconds </span>
+          <div class="countdown__element countdown__hours border--colored"> 
+            <span id="hours" class="count hours text--colored">00</span>
+            <span class="label hours_ref text--colored">hours</span>
           </div>
+          <div class="countdown__element countdown__minutes border--colored"> 
+            <span id="minutes" class="count minutes text--colored">00</span>
+            <span class="label minutes_ref text--colored">minutes</span>
+          </div>
+          <div class="countdown__element countdown__seconds border--colored"> 
+            <span id="seconds" class="count seconds text--colored">00</span>
+            <span class="label seconds_ref text--colored">seconds</span>
+          </div>
+
+
+
         </div>
       </div>
     </div>
@@ -160,10 +169,12 @@
       <h2 class="s-title text--colored"> Love Story</h2>
       <div class="story__slider">
         <div class="story__slide">
-          <div class="story__slider-image"><img class="story__slider-image img-responsive" src="/img/10.jpg"
-              alt="Photo" /></div>
+          <div  class="story__slider-image"><img class="story__slider-image img-responsive image_div" src="/img/10.jpg"
+              alt="Photo" />
+          </div>
           <div class="story__slider-text">
             <div class="slider__head-text text--colored">
+              <div class="arrows_slider"></div>
               <h3 class="couple__title text--colored"> How They Met</h3>
             </div>
             <p class="story__slider-descr">They locked eyes for the first time in Downtown Tampa 4 years ago, it was an
@@ -171,9 +182,10 @@
           </div>
         </div>
         <div class="story__slide">
-          <div class="story__slider-image"><img class="img-responsive" src="/img/14.jpg" alt="Photo" /></div>
+          <div class="story__slider-image"><img class="img-responsive image_div" src="/img/14.jpg" alt="Photo" /></div>
           <div class="story__slider-text">
             <div class="slider__head-text">
+              <div class="arrows_slider"></div>
               <h3 class="couple__title">First Date</h3>
             </div>
             <p class="story__slider-descr">In traditional fashion, Miguel and Paola learned more about each other during
@@ -181,9 +193,10 @@
           </div>
         </div>
         <div class="story__slide">
-          <div class="story__slider-image"><img class="img-responsive" src="/img/6.jpg" alt="Photo" /></div>
+          <div class="story__slider-image"><img class="img-responsive image_div" src="/img/6.jpg" alt="Photo" /></div>
           <div class="story__slider-text">
             <div class="slider__head-text">
+              <div class="arrows_slider"></div>
               <h3 class="couple__title">How he proposed</h3>
             </div>
             <p class="story__slider-descr">Miguel felt the time was right and picked out the engagement ring a month

@@ -1173,7 +1173,7 @@ ul.color_schemes li {
   content: "";
   position: absolute;
   width: 112px;
-  height: 1px;
+  height: 0px;
   background-color: #4F3566;
   bottom: 0;
   left: 0;
@@ -1191,7 +1191,7 @@ ul.color_schemes li {
 
 .slick-arrow {
   position: absolute;
-  bottom: -4px;
+/* bottom: -4px; */
   border: none;
   background: none;
   width: 100px;
@@ -1200,7 +1200,7 @@ ul.color_schemes li {
 }
 
 .slick-prev {
-  left: 0;
+  left: -5px;
   background-image: url("../img/slider/arrow-left.svg");
   background-position: center center;
   background-size: cover;
@@ -1241,7 +1241,7 @@ ul.color_schemes li {
 }
 
 .slick-next:hover {
-  left: 143px;
+  left: 148px;
 }
 
 .slick-track {
