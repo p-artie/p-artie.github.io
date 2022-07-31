@@ -1265,14 +1265,14 @@ ul.color_schemes li {
 
 @media only screen and (max-width: 920px) {
   .story .slick-prev {
-    left: 42%;
+    left: 37%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
   .story .slick-next {
-    left: 58%;
+    left: 63%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1325,14 +1325,14 @@ ul.color_schemes li {
 
 @media only screen and (max-width: 730px) {
   .story .slick-prev {
-    left: 40%;
+    left: 35%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
   .story .slick-next {
-    left: 60%;
+    left: 65%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1341,14 +1341,14 @@ ul.color_schemes li {
 
 @media only screen and (max-width: 600px) {
   .story .slick-prev {
-    left: 36%;
+    left: 31%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
   .story .slick-next {
-    left: 66%;
+    left: 71%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1357,14 +1357,14 @@ ul.color_schemes li {
 
 @media only screen and (max-width: 420px) {
   .story .slick-prev {
-    left: 32%;
+    left: 37%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
   .story .slick-next {
-    left: 70%;
+    left: 75%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1373,14 +1373,14 @@ ul.color_schemes li {
 
 @media only screen and (max-width: 350px) {
   .story .slick-prev {
-    left: 22%;
+    left: 17%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
   .story .slick-next {
-    left: 75%;
+    left: 80%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
