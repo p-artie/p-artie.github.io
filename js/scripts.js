@@ -146,14 +146,20 @@ var x = setInterval(function() {
 	//Story slider
 	$('.story__slider').slick({
 		infinite: true,
-		prevArrow: '<button type="button" class="slick-prev arrow-left--colored"></button>',
-		nextArrow: '<button type="button" class="slick-next arrow-right--colored"></button>'
+    appendArrows: '.arrows_slider',
+  //  arrows: false,
+	prevArrow: '<button type="button" class="slick-prev arrow-left--colored"></button>', 
+  nextArrow: '<button type="button" class="slick-next arrow-right--colored"></button>'
 	});
 
-  //Fancybox
-  // $(".fancy").fancybox({
-  //   'hideOnContentClick': true
-  //   });
+$(function () {
+   $('.story__slider .slick-prev').on('click', function () {
+           $('.story__slider').slick("slickPrev");
+       });
+       $('.story__slider .slick-next').on('click', function () {
+           $('.story__slider').slick("slickNext");
+       });
+ }); 
 
 	//Photo slider
     var swiper = new Swiper('.swiper-container', {
